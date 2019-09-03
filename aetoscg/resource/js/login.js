@@ -20,7 +20,11 @@ var vm = new Vue({
                 vant.Toast('请输入密码');
                 return
             }
-
+            setTimeout(() => {
+                localStorage.setItem('user',this.username)
+                location.href = './index.html'
+            }, 100);
+            
         }
     }
 })

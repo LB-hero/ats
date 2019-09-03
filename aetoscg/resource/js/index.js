@@ -3,7 +3,8 @@ var vm = new Vue({
     el:"#app",
     data () {
         return {
-            active:0
+            active:0,
+            username:localStorage.getItem('user')
         }
     },
     methods: {
