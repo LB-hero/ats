@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aetoscg</title>
+</head>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.1/lib/index.css">
+<link rel="stylesheet" href="./resource/common/css/common.css">
+<link rel="stylesheet" href="./resource/common/ionic/iconfont.css">
+<style>
+    .bodyimg {
+        width: 100%;
+    }
+
+    .businessbody {
+        text-align: center
+    }
+
+    .logoimg {
+        height: 200px;
+        width: 81%;
+        margin: 4% 8%;
+    }
+</style>
+
+<body>
+    <main id="app">
+        <div class="businessbody" v-show="!business">
+            <img class="bodyimg" src="./resource/common/img/timg.jpg" alt="">
+            <van-button type="info" @click="openbusiness">开启商务之旅</van-button>
+
+        </div>
+        <div v-show="business">
+            <img class="logoimg" v-bind:src="images" alt="">
+            <van-grid :border="false" :column-num="3">
+                <van-grid-item @click="go(1)" icon="friends-o" text="我的客户">
+                </van-grid-item>
+                <van-grid-item @click="go(2)" icon="cash-on-deliver" text="我的收入">
+                </van-grid-item>
+            </van-grid>
+
+        </div>
+
+        <ax-footer :active="active"></ax-footer>
+    </main>
+</body>
+
+</html>
+<script src="./resource/common/js/Vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.1/lib/vant.min.js"></script>
+<script src="./resource/common/js/module.js"></script>
+<script src="./resource/js/business.js"></script>

@@ -9,20 +9,21 @@
 </head>
 <!-- 引入样式 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.1/lib/index.css">
+<link rel="stylesheet" href="./resource/common/css/common.css">
+<link rel="stylesheet" href="./resource/common/ionic/iconfont.css">
 
 <body>
     <main id="app">
-        <van-tabbar v-model="active">
-            <van-tabbar-item url='' icon="home-o">标签</van-tabbar-item>
-            <van-tabbar-item url='./1.html' icon="search" dot>标签</van-tabbar-item>
-            <van-tabbar-item url='./2.html' icon="friends-o" info="5">标签</van-tabbar-item>
-            <van-tabbar-item url='./3.html' icon="setting-o" info="20">标签</van-tabbar-item>
-        </van-tabbar>
+        {{username}}
+        
+        <span class="my-icon">&#xe8b2;</span>
+        <span class="iconfont icon-shangwu"></span>
+        <ax-footer :active="active"></ax-footer>
     </main>
 </body>
 
 </html>
 <script src="./resource/common/js/Vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vant@2.1/lib/vant.min.js"></script>
-
-<script src="./resource/js/index.js"></script>
+<script src="./resource/common/js/module.js"></script>
+<script src="./resource/js/me.js"></script>

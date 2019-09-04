@@ -4,7 +4,8 @@ var vm = new Vue({
         return {
             username: '',
             password: '',
-            checked: 1
+            checked: 1,
+            
         }
     },
     created () {

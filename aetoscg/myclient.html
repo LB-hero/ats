@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aetoscg</title>
+</head>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.1/lib/index.css">
+<link rel="stylesheet" href="./resource/common/css/common.css">
+<style>
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+</style>
+
+<body>
+    <main id="app">
+        <top-go titles="我的客户"></top-go>
+        <div>
+            资源位，如何开户等相关说明
+        </div>
+        <van-grid :border="false" :column-num="3">
+            <van-grid-item @click="go(1)" icon="friends-o" text="佣金规则">
+            </van-grid-item>
+            <van-grid-item @click="go(2)" icon="cash-on-deliver" text="待激活">
+            </van-grid-item>
+            <van-grid-item @click="go(3)" icon="cash-on-deliver" text="已激活">
+            </van-grid-item>
+        </van-grid>
+
+        <van-cell icon="shop-o" title="待激活" :value="'全部('+list.length+')'"   ></van-cell>
+        <div v-for="(item , index) in list" >
+            <div class="flex">
+                    <span>{{item.name}}</span>
+                    <van-icon name="close" />
+                    <span>未认证</span> 
+                    <span>{{item.dsa}}</span>
+            </div>
+            <div class="flex">
+                <span>创建日期：{{item.time}}7</span>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+<script src="./resource/common/js/Vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.1/lib/vant.min.js"></script>
+<script src="./resource/common/js/module.js"></script>
+<script src="./resource/js/myclient.js"></script>

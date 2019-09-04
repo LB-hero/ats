@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="shangwu" unicode="&#59570;" d="M896 608H128a42.666667 42.666667 0 0 1-42.666667-42.666667v-554.666666a42.666667 42.666667 0 0 1 42.666667-42.666667h768a42.666667 42.666667 0 0 1 42.666667 42.666667v554.666666a42.666667 42.666667 0 0 1-42.666667 42.666667z m0-597.333333H128v362.666666h170.666667v-106.666666h42.666666v106.666666h341.333334v-106.666666h42.666666v106.666666h170.666667z m0 405.333333H128v149.333333h768zM298.666667 757.333333h426.666666v-106.666666h42.666667v106.666666a42.666667 42.666667 0 0 1-42.666667 42.666667H298.666667a42.666667 42.666667 0 0 1-42.666667-42.666667v-106.666666h42.666667z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
